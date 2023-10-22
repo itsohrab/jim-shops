@@ -122,6 +122,38 @@ Config = {
 		["blackmarket"] = {
 			{ name = "radioscanner", price = 850, amount = 5 },
 		},
+		["petshop"] = {
+			{ name = "keepcompanionwesty", price = 50000, amount = 5,},
+			{ name = "keepcompanionshepherd", price = 85000, amount = 5,},
+			{ name = "keepcompanionretriever", price = 50000, amount = 5,},
+			{ name = "keepcompanionrottweiler", price = 75000, amount = 5,},
+			{ name = "keepcompanionpug", price = 50000, amount = 5,},
+			{ name = "keepcompanionpoodle", price = 50000, amount = 5,},
+			{ name = "keepcompanionmtlion2", price = 50000, amount = 5,},
+			{ name = "keepcompanioncat", price = 25000, amount = 5,},
+			{ name = "keepcompanionmtlion", price = 100000, amount = 5,},
+			{ name = "keepcompanionhusky", price = 100000, amount = 5,},
+			{ name = "keepcompanionrabbit", price = 15000, amount = 5,},
+			{ name = "keepcompanionhen", price = 15000, amount = 5,},
+			{ name = "keepcompanioncoyote", price = 15000, amount = 5,},
+			{ name = "petfood", price = 100, amount = 500,},
+			{ name = "petwaterbottleportable", price = 100, amount = 500,},
+			{ name = "collarpet", price = 100, amount = 500,},
+			{ name = "firstaidforpet", price = 100, amount = 500,},
+			{ name = "petnametag", price = 1000, amount = 500,},
+			{ name = "petgroomingkit", price = 1000, amount = 500,},
+		},
+		["pokemon"] = {
+		    	{ name = "boosterpack", price = 1000, amount = 50,},
+			{ name = "boosterbox", price = 7500, amount = 10,},
+			{ name = "pokebox", price = 3500, amount = 50,},
+		},
+		["huntingshop"] = {
+			{ name = "weapon_musket", price = 1500, amount = 10, },
+			{ name = "shotgun_ammo", price = 100, amount = 50, },
+			{ name = "huntingbait", price = 150, amount = 150, },
+			{ name = "weapon_knife", price = 500, amount = 50, },
+		},
 	},
 }
 
@@ -409,6 +441,38 @@ Config.Locations = {
 		},
 		["products"] = Config.Products["coffeeplace"], -- example using coffeplace info
 		["hideblip"] = true,
+	},
+	["petshop"] = {
+		["label"] = "Buy your own Pets",
+		["type"] = "items",
+		["model"] = {
+			`S_M_M_StrVend_01`,
+		},
+		["coords"] = { vector4(561.18, 2741.51, 42.87, 199.08), },
+		["products"] = Config.Products["petshop"],
+		["blipsprite"] = 267,
+		["blipcolour"] = 5,
+	},
+	["pokemonstore"] = {
+		["label"] = "Pokemon Shop",
+		["type"] = "items",
+		["model"] = {
+			`S_M_M_StrVend_01`,
+		},
+		["coords"] = { vector4(-157.18, 234.67, 94.92, 177.96), },
+		["products"] = Config.Products["pokemon"],
+		["hideblip"] = true,
+	},
+	["huntingshop"] = {
+		["label"] = "Hunting Shop",
+		["type"] = "weapon",
+		["model"] = {
+			`ig_hunter`,
+		},
+		["coords"] = { vector4(-679.47, 5834.49, 17.33, 127.62), },
+		["products"] = Config.Products["huntingshop"],
+		["blipsprite"] = 626,
+		["blipcolour"] = 1,
 	},
 }
 
